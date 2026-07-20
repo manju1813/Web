@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>Biodata Form</b></h1>
+    <hr>
+    <form>
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td width="150">Name:</td>
+                    <td><input type="text" placeholder="Insert your name" size="30"></td>
+                </tr>
+                <tr>
+                    <td width="150">Age:</td>
+                    <td><input type="number" placeholder="Enter Age"></td>
+                </tr>
+                <tr>
+                    <td width="150">Sex:</td>
+                    <td><input type="radio" name="gender">Male<br>
+                   <input type="radio" name="gender">Female</td>
+                </tr>
+                <tr>
+                    <td width="150">Address:</td>
+                    <td><textarea name="address" rows="5" cols="30" placeholder="Insert your address"></textarea></td>
+                </tr>
+                <tr>
+                    <td width="150">Email:</td>
+                    <td><input type="email" placeholder="Insert your email"></td>
+                </tr>
+                <tr>
+                    <td width="150">Date Of Birth:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td width="150">Height</td>
+                    <td><input type="range" min="100" max="250" value="150">150</td>
+                </tr>
+                <tr>
+                    <td width="150">Tel:</td>
+                    <td><input type="number" minlength="10" maxlength="10" placeholder="+60##-#######"></td>
+                </tr>
+                <tr>
+                    <td width="150">My Favourite Colour:</td>
+                    <td><input type="color"></td>
+                </tr>
+                <tr>
+                    <td width="150">Fb/TW/IG:</td>
+                    <td><input type="text" placeholder="Insert the URL"></td>
+                </tr>
+                <tr>
+                    <td width="150">My Face Photo:</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td width="150">My University:</td>
+                    <td>
+                        <select name="University" id="University">
+                            <option value="Select">Select</option>
+                        <option value="VTU">VTU</option>
+                        <option value="Autonomous">Autonomous</option>
+                    </select>
+                </td>
+                </tr>
+            </table>
+            <hr>
+            <button>Submit My Biodata</button>
+            <button>Reset</button>
+    </form>
+</body>
+</html>

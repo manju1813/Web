@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: tomato;
+            font-style: italic;
+        }
+
+        #product-container {
+            height: 150vh;
+            width: 100%;
+            background: linear-gradient(to right, #e9e4f0, #d3cce3);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }
+        .product-card{
+            height: 270px;
+            width: 230px;
+            border: 2px solid ;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .product-card img{
+            height: 120px;
+            width: 100px;
+            border-radius: 25px;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+        }
+        .product-card p{
+            text-align: center;
+        }
+
+        .product-card button{
+            height: 20px;
+            width: 100px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 50px;
+        }
+        .product-card button:hover{
+            background-color: gray;
+            color: aliceblue;
+        }
+        .product-card:hover{
+            transform: scale(1.03,1.03);
+            box-shadow: 10px 10px 10px  red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>All Products</h1>
+    <section id="product-container">
+        <aside class="product-card">
+            <img src="https://media.bechtle.com/is/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/08c7217e890e45b4bb8eddadc8b84200?version=0&x=3840&quality=75"
+                alt="">
+            <h4>I Phone 17 pro max</h4>
+            <p>₹ 1,19,500/-</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, suscipit!</p>
+            <button>Add to Cart</button>
+        </aside>
+        <aside class="product-card">
+            <img src="https://media.bechtle.com/is/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/08c7217e890e45b4bb8eddadc8b84200?version=0&x=3840&quality=75"
+                alt="">
+            <h4>I Phone 17 pro max</h4>
+            <p>₹ 1,19,500/-</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, suscipit!</p>
+            <button>Add to Cart</button>
+        </aside>
+        <aside class="product-card">
+            <img src="https://media.bechtle.com/is/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/08c7217e890e45b4bb8eddadc8b84200?version=0&x=3840&quality=75"
+                alt="">
+            <h4>I Phone 17 pro max</h4>
+            <p>₹ 1,19,500/-</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, suscipit!</p>
+            <button>Add to Cart</button>
+        </aside>
+        <aside class="product-card">
+            <img src="https://media.bechtle.com/is/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/08c7217e890e45b4bb8eddadc8b84200?version=0&x=3840&quality=75"
+                alt="">
+            <h4>I Phone 17 pro max</h4>
+            <p>₹ 1,19,500/-</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, suscipit!</p>
+            <button>Add to Cart</button>
+        </aside>
+        <aside class="product-card">
+            <img src="https://media.bechtle.com/is/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/08c7217e890e45b4bb8eddadc8b84200?version=0&x=3840&quality=75"
+                alt="">
+            <h4>I Phone 17 pro max</h4>
+            <p>₹ 1,19,500/-</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, suscipit!</p>
+            <button>Add to Cart</button>
+        </aside>
+    </section>
+</body>
+
+</html>

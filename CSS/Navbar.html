@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            height: 70px;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+        }
+        .menu{
+            height: 70px;
+            flex-basis: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 5%;
+            font-size: 22px;
+        }
+        .logo{
+            height: 70px;
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img{
+            height: 60px;
+            width: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        .icons{
+             height: 70px;
+            flex-basis: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+            font-size: 30px;
+        }
+        .menu a:hover{
+            border-bottom: 2px solid black;
+        }
+        .menu a{
+            color: rgb(39, 35, 32);
+            font-size: 22px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <aside class="menu">
+            <a href="#">Featured</a>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+        </aside>
+        <aside class="logo">
+            <img src=https://images.seeklogo.com/logo-png/54/1/one8-logo-png_seeklogo-547320.png alt="">
+        </aside>
+        <aside class="icons">
+            <p>❤️</p>
+            <p>🧑</p>
+            <p>🛒</p>
+        </aside>
+        
+    </nav>
+</body>
+</html>

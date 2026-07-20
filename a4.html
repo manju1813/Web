@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="sky blue" text="black">
+    <center>
+        <h1>Admission Form</h1>
+    </center>
+        <form>
+            <fieldset>
+                <legend><i>Personal Information</i></legend>
+                <table cellpadding="10">
+                    <tr>
+                        <td><font size="5"><b>Registration no:-</b></font></td>
+                        <td><input type="text" size="70" placeholder="Enter Registration no"></td>
+                        <td><font size="5"><b>Student Name:-</b></font></td>
+                        <td><input type="text" size="70" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td><font size="5"><b>Father Name:-</b></font></td>
+                        <td><input type="text" size="70" placeholder="Father name"></td>
+                        <td><font size="5"><b>E-mail ID:-</b></font></td>
+                        <td><input type="email" size="70" placeholder="Enter E-mail"></td>
+                    </tr>
+                    <tr>
+                        <td><font size="5"><b>Mother Name:-</b></font></td>
+                        <td><input type="text" size="70" placeholder="Mother name"></td>
+                        <td><font size="5"><b>Date Of Birth:-</b></font></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><font size="5"><b>Aadhar Number:-</b></font></td>
+                        <td><input type="text" size="70" placeholder="Enter Aadhar No"></td>
+                        <td><font size="5"><b>Mobile Number:-</b></font></td>
+                        <td><input type="text" size="70" minlength="10" maxlength="10" placeholder="Enter Number"></td>
+                    </tr>
+                    <tr>
+                        <td><font size="5"><b>Select Gender:-</b></font></td>
+                        <td>
+                            <font size="5">
+                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="female">Female
+                            <input type="radio" name="gender" value="other">Other
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend><i>Education Qualification</i></legend>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th><font size="5">Select Board</font></th>
+                        <th><font size="5">Total Number</font></th>
+                        <th><font size="5">Obtained Number</font></th>
+                        <th><font size="5">Percentage</font></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font size="5"><b>High School:-</b> </font>
+                            <select name="board" id="board">
+                                <option value="Select Board">Select Board</option>
+                                <option value="State">State</option>
+                                <option value="CBSE">CBSE</option>
+                            </select>
+                        </td>
+                        <td><input type="text" size="20"></td>
+                        <td><input type="text" size="20"></td>
+                        <td><input type="text" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font size="5"><b>PUC:-</b> </font>
+                            <select name="board" id="board">
+                                <option value="Select Board">Select Board</option>
+                                <option value="State">State</option>
+                                <option value="CBSE">CBSE</option>
+                            </select>
+                        </td>
+                        <td><input type="text" size="20"></td>
+                        <td><input type="text" size="20"></td>
+                        <td><input type="text" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font size="5"><b>Degree:-</b> </font>
+                            <select name="university" id="university">
+                                <option value="Select University">Select University</option>
+                                <option value="VTU">VTU</option>
+                                <option value="Mysore University">Mysore University</option>
+                            </select>
+                        </td>
+                        <td><input type="text" size="20"></td>
+                        <td><input type="text" size="20"></td>
+                        <td><input type="text" size="20"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend><i>Course Applied</i></legend>
+                <label for="course"><font size="5"><b>Select type of Course:</b></font></label>
+                <select name="course" id="course">
+                    <option value="Select Course">Select Course</option>
+                    <option value="Java Full Stack">Java Full Stack</option>
+                    <option value="Python Full Stack">Python Full Stack</option>
+                    <option value="Devops">Devops</option>
+                </select>
+                <br>
+                <label for="subject"><font size="5">Choose UG Subject here...</font></label>
+                <font size="5">
+                <b>
+                <input type="radio" name="subject" value="BE">BE
+                <input type="radio" name="subject" value="BCA">BCA
+                <input type="radio" name="subject" value="B.Com">B>Com
+                <input type="radio" name="subject" value="B.sc">B.sc
+                <input type="radio" name="subject" value="LLB">LLB
+                </b>
+                </font>
+                <br>
+                 <label for="subject"><font size="5">Choose PG Subject here...</font></label>
+                <font size="5">
+                <b>
+                <input type="radio" name="subject" value="BTECH">BTECH
+                <input type="radio" name="subject" value="MCA">MCA
+                <input type="radio" name="subject" value="M.Com">M.Com
+                <input type="radio" name="subject" value="M.sc">M.sc
+                <input type="radio" name="subject" value="LLM">LLM
+                </b>
+                </font>
+            </fieldset>
+             <font size="5">
+            <input type="checkbox">I here by declare that the given above is true and correct to the best of my knowledge and belief.
+            </font>
+            <center>
+            <button style="background-color: green; color: white; width: 120px; height: 45px;">Register</button>
+            <button style="background-color: red; color: white; width: 120px; height: 45px;">Clear</button>
+            </center>
+            </center>
+        </form>
+</body>
+</html>

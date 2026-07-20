@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form>
+        <fieldset>
+            <legend>LOGIN</legend>
+            <label for="Username">Username</label>
+            <input type="text" id="Username">
+            <br><br>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd">
+            <br><br>
+            <button>Submit</button>
+            <button>Reset</button>
+        </fieldset>
+    </form> -->
+    <form>
+        <fieldset>
+            <legend>Form</legend>
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username" placeholder="Enter Username" required>
+            <br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="password" placeholder="Enter Password" required>
+             <br><br>
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" placeholder="Enter email" required>
+             <br><br>
+             <label for="Phno">Ph Number</label>
+             <input type="Phno" id="Phno" minlength="10" maxlength="10" placeholder="Enter the Phno" required>
+             <br><br>
+             <label for="DOB">Date Of Birth:</label>
+             <input type="datetime-local" id="DOB" placeholder="Enter DOB" required>
+             <br><br>
+             <label for="age">Age:</label>
+             <input type="number" id="age" placeholder="Age" required min="18" max="24">
+             <br><br>
+             <label for="gender">Gender:</label>
+             <input type="radio" name="gender" value="male">Male
+             <input type="radio" name="gender" value="female">Female
+             <input type="radio" name="gender" value="others">Others
+             <br><br>
+             <label for="state">State:</label>
+             <select name="state" id="state">
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Andhra">Andhra</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+             </select>
+             <br><br>
+             <label for="skills">Skills:</label>
+             <input type="checkbox" value="Java">Java
+             <input type="checkbox" value="Python">Python
+             <input type="checkbox" value="SQL">SQL
+             <input type="checkbox" value="Web">Web
+             <input type="checkbox" checked="ReactJS"> ReactJS
+             <br><br>
+             <label for="address">Enter Address:</label>
+             <textarea name="address" id="address" rows="3" cols="25"></textarea>
+             <br><br>
+            <button>Submit</button>
+            <button>Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>

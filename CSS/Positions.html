@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 2px solid red;
+            position: relative;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+        }
+        aside:first-child{
+            background-color: aqua;
+            /* position: relative;
+            left: 200px;
+            top: 150px; */
+            position: absolute;
+            right: 0;
+        }
+        aside:nth-child(2){
+            background-color: yellow;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        aside:nth-child(3){
+            background-color: green;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        aside:nth-child(4){
+            background-color: orangered;
+            left: 0;
+            top: 0;
+        }
+        aside:last-child{
+            background-color: blueviolet;
+            position: absolute;
+            top: 36%;
+            left: 38%;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <aside class="child"></aside>
+        <aside class="child"></aside>
+        <aside class="child"></aside>
+        <aside class="child"></aside>
+        <aside class="child"></aside>
+    </section>
+</body>
+</html>

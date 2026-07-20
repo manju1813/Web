@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter Name" required>
+        <br><br>
+        <label for="pwd">Password</label>
+        <input type="password" placeholder="Enter Password" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+        <br><br>
+        <label for="DOB">Date Of Birth</label>
+        <input type="datetime-local" id="DOB" placeholder="Enter DOB" required>
+        <br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="others">Others
+        <br><br>
+        <label for="Course">Course</label>
+        <input type="checkbox" value="Java Full Stack">Java Full Stack
+        <input type="checkbox" value="Python Full Stack">Python Full Stack
+        <input type="checkbox" value="SQL">SQL
+        <input type="checkbox" value="Web">Web
+        <input type="checkbox" checked="ReactJS"> ReactJS
+        <br><br>
+        <label for="address">Home Address:</label>
+        <textarea name="address" id="address" rows="3" cols="25"></textarea>
+        <br><br>
+        <label for="state">State:</label>
+             <select name="state" id="state">
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Andhra">Andhra</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+             </select>
+        <br><br>
+        <label for="branch">Qspiders Branch:</label>
+             <select name="branch" id="branch">
+                <option value="Mysore">Qspiders Mysore</option>
+                <option value="Bangalore">Qspiders Bangalore</option>
+                <option value="Hyderabad">Qspiders Hyderabad</option>
+                <option value="Chennai">Qspiders Chennai</option>
+             </select>
+             <br><br>
+        <label for="resume">Upload your Resume</label>
+        <input type="file">
+        <br><br>
+        <label for="color">Select Color</label>
+        <input type="color">
+        <br><br>
+        <label for="range">Select Range</label>
+        <input type="range">
+        <br><br>
+        <label for="image">Upload Image</label>
+        <input type="image" src="./download (1).webp" height="60" width="60">
+        <br><br>
+        <label for="url">Enter Git Hub URL</label>
+        <input type="url" placeholder="Enter Git Hub URL">
+        <br><br>
+        <label for="week">Select Week</label>
+        <input type="week">
+        <br><br>
+        <label for="Month">Select Month</label>
+        <input type="month">
+        <br><br>
+        <button>Submit</button>
+        <button>Reset</button>
+    </form>
+</body>
+</html>
