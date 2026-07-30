@@ -251,3 +251,130 @@ s3.getStudents()
 // Deleting a Student
 s3.deleteStudent(3)
 s3.getStudents()
+
+// Create an EmployeeCrud class to manage employee records
+
+//EmployeeCRUD
+
+class EmployeeCRUD{
+    constructor(){
+        this.employees=[]
+    }
+    addEmployee(id,name,age,designation,salary){
+        let emp={
+            id:id,
+            name:name,
+            age:age,
+            designation:designation,
+            salary:salary
+
+        }
+        this.employees.push(emp)
+        console.log("employees added successfully")
+
+    }
+    getEmployees(){
+        console.log(this.employees)
+
+        this.employees.forEach((emp)=> {
+            console.log(emp)
+        })
+
+    }
+    updateEmployees(id,name,age,designation,salary){
+        let employee=this.employees.find((emp)=>emp.id==id)
+        if(employee){
+            employee.name=name
+            employee.age=age
+           employee.designation=designation
+           employee.salary=salary
+
+            console.log("employee updated successfully")
+        } else{
+            console.log("employee not found")
+        }
+    }
+   deleteEmployee(id){
+    let index=this.employees.findIndex((emp)=>{
+        return emp.id===id
+    })
+    console.log(index,"INDEX VALUE")
+    if(index!=-1){
+        this.employees.splice(index,1)
+        console.log("employee deleted successfully")
+    }else{
+        console.log("employee not found")
+    }
+   }
+
+}
+let e3=new EmployeeCRUD();
+//Adding a employee {create}
+
+e3.addEmployee(1,"ajith",23,"developer",42354)
+e3.addEmployee(2,"prasad",25,"tester",10000)
+e3.addEmployee(3,"mahadev",24,"tester",20000)
+//displaying Employee [read]
+e3.getEmployees();
+
+//updating the student 
+e3.updateEmployees(2,"prasaduuuu",24,"full stack",42314)
+e3.getEmployees();
+
+
+//delete the student
+e3.deleteEmployee(2)
+e3.getEmployees();
+
+// Create a BookCRUD class to manage library books.
+
+class BookCRUD{
+    constructor(){
+        this.books=[]
+    }
+    addBooks(id,bookName,author,price,category){
+        let bk={
+            id:id,
+            bookName:bookName,
+            author:author,
+            price:price,
+            category:category
+        }
+        this.books.push(bk)
+        console.log("Book Added Successfully")
+    }
+    getBooks(){
+        console.log(this.books)
+
+        this.books.forEach((bk)=>{
+            console.log(bk)
+        })
+    }
+    updateBooks(id,bookName,author,price,category){
+        let book=this.books.find((bk)=>bk.id===id)
+        if(book){
+            book.bookName=bookName
+            book.author=author
+            book.price=price
+            book.category=category
+
+            console.log("Book Updated Successfully")
+        }else{
+            console.log("Book Not Found")
+        }
+    }
+    deleteBook(id){
+        let index=this.books.findIndex((bk)=>{
+            return bk.id===id
+        })
+        console.log(index,"INDEX VALUE")
+        if(index!=-1){
+            this.books.splice(index,1)
+            console.log("Book Deleted Successfully")
+        }else{
+            console.log("Book Not Found")
+        }
+    }
+}
+let bk1=new BookCRUD();
+bk1.addBooks(1,"Java","Abhilash",1000,"CSE")
