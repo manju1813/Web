@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100%;
+            border: 2px solid red;
+            background: 2px solid red;
+        }
+
+        div aside{
+            height: 100px;
+            width: 100px;
+            background-color: darkred;
+            border-radius: 50%;
+            animation: task2 2s linear 1s infinite;
+
+        }
+ @keyframes task2 {
+        /* 0%{
+            height: 100px;
+            width: 100px;
+
+        }
+        50%{
+            background: linear-gradient(red,gold,black,red);
+        }
+        100%{
+            width:100%;
+        }
+       } */
+        0%{
+            transform: translate(0);
+        }
+        100%{
+            transform: translateX(1000px);
+        }
+ }
+
+        
+    </style>
+</head>
+<body>
+   <div>
+    <aside></aside>
+   </div> 
+</body>
+
+</html>

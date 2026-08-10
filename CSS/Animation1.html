@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        aside{
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(purple,yellow,green);
+            animation-name: task1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes task1 {
+            0%{
+                height: 100px;
+                width: 100px;
+            }
+            50%{
+                background: linear-gradient(pink,blue,orange,red);
+            }
+            100%{
+                width: 100%;
+            }
+        }
+    </style>
+<body>
+    <aside></aside>
+</body>
+</html>
