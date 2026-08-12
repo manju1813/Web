@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/homepage.css">
+    <link rel="stylesheet" href="./Style/menu.css">
+</head>
+
+<body>
+    <nav class="navbarContainer">
+        <aside class="logo">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/023/617/247/small/coffee-shop-logo-free-png.png"
+                alt="Brew & Co Logo">
+            <span>Brew & Co</span>
+        </aside>
+
+        <aside class="menu">
+            <a href="./index.html" class=" menuItem">Home Page</a>
+            <a href="#" class="menuItem">About</a>
+            <a href="./menu.html" class=" active menuItem">Menu</a>
+            <a href="./cart.html">Cart <span id="cartCount"></span></a>
+            
+        </aside>
+    </nav>
+
+    <section class="containerHeader">
+        <h2>Our Menu</h2>
+        <p> Freshly brewed coffee, warm moments,and the perfect place to relax.</p>
+    </section>
+
+    <section class="filterContainer">
+        <input type="search" id="searchBox" onkeyup="searchFilter()" placeholder="Search for coffee, tea , desserts......">
+        <aside class="filterButtons">
+            <button class="filterBtns" onclick="filterItems('all')">All</button>
+            <button class="filterBtns" onclick="filterItems('hotCoffee')">☕ Hot Coffee</button>
+            <button class="filterBtns" onclick="filterItems('coldCoffee')">🧋 Cold Coffee</button>
+            <button class="filterBtns" onclick="filterItems('tea')"> 🍵Tea</button>
+            <button class="filterBtns" onclick="filterItems('desserts')">🍰 Desserts</button>
+        </aside>
+    </section>
+
+    <section class="itemsContainer">
+        <aside class="itemsList" id="itemList">
+            
+        </aside>
+    </section>
+    <footer class="footerContainer">
+        <div class="footerLogo">
+            <span>☕ Brew & Co</span>
+        </div>
+        <p>Fresh coffee. Good moments.</p>
+        <div class="footerLinks">
+            <a href="./index.html">Home</a>
+            <a href="#">About</a>
+            <a href="./index.html">Menu</a>
+        </div>
+        <p class="copyright">
+            © 2026 Brew & Co. All rights reserved.
+        </p>
+    </footer>
+</body>
+<script src="./Script/menu.js"></script>
+
+</html>

@@ -1,0 +1,116 @@
+.containerHeader {
+    text-align: center;
+    padding: 30px 20px 25px;
+}
+.containerHeader h1 {
+    font-size: 40px;
+    color: #3e2723;
+    margin-bottom: 8px;
+}
+.containerHeader p {
+    color: #795548;
+    font-size: 16px;
+}
+.filterContainer {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+#searchBox {
+    width: 300px;
+    padding: 12px 18px;
+    border: 1px solid #c8b6a6;
+    border-radius: 25px;
+    outline: none;
+    font-size: 15px;
+    background-color: white;
+}
+#searchBox:focus {
+    border-color: sienna;
+}
+.filterButtons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.filterBtns {
+    border: 1px solid sienna;
+    background-color: transparent;
+    color: #6d2f1a;
+    padding: 9px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.filterBtns:hover{
+    background-color: sienna;
+    color: white;
+}
+.itemsContainer {
+    width: 86%;
+    margin: auto;
+    padding-bottom: 60px;
+}
+.product-main-Container{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.product-main-Container h2{
+    margin-top: 10px;
+    text-align: center;
+    color: #3e2723;
+}
+.itemsList, #product-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.ItemCard {
+    width: calc(25% - 19px);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(62, 39, 35, 0.12);
+    transition: 0.3s;
+}
+.ItemCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(62, 39, 35, 0.2);
+}
+.ItemCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.itemDetails {
+    padding: 18px;
+}
+.itemDetails h3 {
+    font-size: 19px;
+    margin-bottom: 7px;
+    color: #3e2723;
+}
+.itemDetails p {
+    font-size: 14px;
+    color: #795548;
+    margin-bottom: 15px;
+}
+.cartBtns button {
+    border: none;
+    background-color: #3e2723;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cartBtns button:hover {
+    background-color: sienna;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/homepage.css">
+    <link rel="stylesheet" href="./Style/menu.css">
+</head>
+<body>
+     <nav class="navbarContainer">
+        <aside class="logo">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/023/617/247/small/coffee-shop-logo-free-png.png"
+                alt="Brew & Co Logo">
+            <span>Brew & Co</span>
+        </aside>
+
+        <aside class="menu">
+            <a href="./index.html" class=" menuItem">Home Page</a>
+            <a href="#" class="menuItem">About</a>
+            <a href="./menu.html" class="menuItem">Menu</a>
+            <a href="./cart.html" class="active menuItem">Cart <span id="cartCount"></span></a>
+            
+        </aside>
+    </nav>
+
+    <section class="product-main-Container">
+        <h2>Your Items</h2>
+        <aside id="product-container">
+
+        </aside>
+    </section>
+    <section class="cartSummary">
+        <h2 id="total">Total</h2>
+        <div class="cartBtns">
+            <button>Order Now</button>
+            <button>Clear Items</button>
+        </div>
+    </section>
+
+
+
+
+     <footer class="footerContainer">
+        <div class="footerLogo">
+            <span>☕ Brew & Co</span>
+        </div>
+        <p>Fresh coffee. Good moments.</p>
+        <div class="footerLinks">
+            <a href="./index.html">Home</a>
+            <a href="#">About</a>
+            <a href="./index.html">Menu</a>
+        </div>
+        <p class="copyright">
+            © 2026 Brew & Co. All rights reserved.
+        </p>
+    </footer>
+</body>
+<script src="./Script/cart.js"></script>
+</html>
